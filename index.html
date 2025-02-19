@@ -18,9 +18,28 @@
           <rect width="200" height="200" fill="#4dd0e1" rx="8" ry="8" stroke="#818ccf" stroke-width="4"/>
           <circle cx="50" cy="50" r="25" fill="#d50000"/>
         </svg>
-        
+
         <svg width="110" height="160" viewBox="0 0 110 160">
             <polyline points="10,10 10,50 50,50, 50,100 100,100 100,150" fill="none" stroke="#ef898b" stroke-width="6"/>
+        </svg>
+
+        <svg width="200" height="200" viewbox="0 0 200 200">
+            <!-- SVG graphic code here -->
+            <!-- viewport, viewbox -->
+            <rect width="200" height="200" fill="#4dd0e1" rx="8" ry="8" stroke="#818ccf" stroke-width="4"/>
+            <circle cx="50" cy="50" r="25" fill="#d50000"/>
+            <circle cx="150" cy="50" r="25" fill="#d50000"/>
+        </svg>
+
+        <!-- reuse elements with use -->
+        <svg width="200" height="200" viewbox="0 0 200 200">
+            <!-- SVG graphic code here -->
+            <!-- viewport, viewbox -->
+            <rect width="200" height="200" fill="#4dd0e1" rx="8" ry="8" stroke="#818ccf" stroke-width="4"/>
+            <circle id="dot" cx="50" cy="50" r="25" fill="#d50000"/>
+            <use xlink:href="#dot" x="100"/>
+            <use xlink:href="#dot" x="100" y="100"/>
+            <use xlink:href="#dot" x="0" y="100"/>
         </svg>
     </div>
 </body>
