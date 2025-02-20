@@ -1,0 +1,8 @@
+.diceFive g{
+    transition: all 0.4s;
+    transform-origin: 100px 100px;
+}
+
+.diceFive:hover g{
+    transform: scale(1.2) rotate(2turn);
+}
