@@ -26,3 +26,7 @@
 .pupil{
     animation: move 1s infinite;
 }
+
+.smiley-wrap:hover .pupil{
+    animation-play-state: paused;
+}
